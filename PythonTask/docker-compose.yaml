@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+        app1:
+                build: ./app1
+                ports:
+                        - target: 5000
+                          published: 5000
+                          protocol: tcp
+        app2:
+                build: ./app2
+                ports:
+                        - target: 5001
+                          published: 5001
+                          protocol: tcp
